@@ -449,7 +449,7 @@ namespace FeedBuilder
 			string outputDir = txtOutputFolder.Text.Trim();
 			int outputDirLength = txtOutputFolder.Text.Trim().Length;
 
-			FileSystemEnumerator enumerator = new FileSystemEnumerator(txtOutputFolder.Text.Trim(), "*.*", true);
+			FileSystemEnumerator enumerator = new FileSystemEnumerator(txtOutputFolder.Text.Trim(), "*", true);
 			foreach (FileInfo fi in enumerator.Matches()) {
 				string thisFile = fi.FullName;
 				if ((IsIgnorable(thisFile))) continue;
