@@ -276,7 +276,7 @@ namespace FeedBuilder
 
                     //File Exists
                     cond = doc.CreateElement("FileExistsCondition");
-                    cond.SetAttribute("type", "or");
+                    cond.SetAttribute("type", "or-not");
                     conds.AppendChild(cond);
                     
 
